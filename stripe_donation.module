@@ -1,0 +1,8 @@
+<?php
+
+/* Edit the title of the Donation content type's Node Add form */
+function stripe_donation_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == 'donation_node_form') {
+    drupal_set_title('Donate Now. Change a Life');
+  }
+}
