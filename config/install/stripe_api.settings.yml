@@ -1,0 +1,6 @@
+test_secret_key: nnp_secret
+test_public_key: nnp
+live_secret_key: nnp_secret
+live_public_key: nnp
+log_webhooks: 1
+mode: test

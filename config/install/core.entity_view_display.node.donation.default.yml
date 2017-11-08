@@ -1,0 +1,58 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.donation.field_address
+    - field.field.node.donation.field_donation_amount
+    - field.field.node.donation.field_email
+    - field.field.node.donation.field_other_amount
+    - field.field.node.donation.field_stripe_token
+    - field.field.node.donation.field_total_amount
+    - node.type.donation
+  module:
+    - address
+    - user
+id: node.donation.default
+targetEntityType: node
+bundle: donation
+mode: default
+content:
+  field_address:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_email:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_stripe_token:
+    weight: 4
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_total_amount:
+    weight: 3
+    label: inline
+    settings:
+      thousand_separator: ','
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_donation_amount: true
+  field_other_amount: true

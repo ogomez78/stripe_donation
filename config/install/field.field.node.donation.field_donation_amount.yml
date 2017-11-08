@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_donation_amount
+    - node.type.donation
+  module:
+    - options
+id: node.donation.field_donation_amount
+field_name: field_donation_amount
+entity_type: node
+bundle: donation
+label: 'Donation Amount'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

@@ -1,0 +1,25 @@
+{
+    "name": "drupal/stripe_donation",
+    "description": "Creates a donation page and processes payments via Stripe.",
+    "type": "drupal-custom-module",
+    "homepage": "https://github.com/ogomez78/stripe_donation",
+    "authors": [
+        {
+            "name": "Osvaldo Gomez",
+            "homepage": "https://github.com/ogomez78",
+            "role": "Maintainer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/ogomez78/stripe_donation/issues",
+        "source": "https://github.com/ogomez78/stripe_donation"
+    },
+    "license": "GPL-2.0+",
+    "minimum-stability": "dev",
+    "require": {
+        "drupal/stripe_api": "*"
+        "auto_entitylabel": "*"
+        "token": "*"
+        "address": "*"
+    },
+}

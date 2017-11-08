@@ -1,0 +1,48 @@
+.js-form-item-field-donation-amount:last-of-type,
+#edit-field-other-amount-wrapper label,
+#edit-field-total-amount-wrapper,
+#edit-field-stripe-token-wrapper,
+#edit-field-address-0 summary {
+  display: none; /* hide some stuff to make the form look good */
+}
+
+#edit-field-donation-amount-wrapper,
+#edit-field-donation-amount--wrapper {
+  margin-bottom: 0; /* remove the bottom margin to help the 'other amount' field feel that it 'belongs' to the 'amount' field */
+}
+
+#edit-field-other-amount-wrapper .form-item {
+  margin-top: 0; /* same as above */
+}
+
+/* format card element a bit */
+
+#card-element {
+  max-width: 400px;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #ccc;
+  margin: 2px 0;
+  padding: 4px;
+}
+
+#card-errors {
+  color: red;
+}
+
+#edit-field-address-0 {
+  border: 0;
+  margin: 0;
+}
+
+#edit-field-address-0 .details-wrapper {
+  padding: 0;
+}
+
+#edit-field-address-0-address-locality {
+  max-width: 90%;
+}
+
+#node-donation-form {
+  overflow: hidden;
+}

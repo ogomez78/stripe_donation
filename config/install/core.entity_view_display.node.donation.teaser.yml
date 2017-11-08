@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.donation
+  module:
+    - user
+id: node.donation.teaser
+targetEntityType: node
+bundle: donation
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden: {  }

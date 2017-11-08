@@ -1,14 +1,10 @@
 name: Stripe Donation
 type: module
 description: Creates a donation page and allows payments via Stripe
-package: Stripe Donations
+core: 8.x
+package: Stripe
 dependencies:
   - stripe_api
   - auto_entitylabel
   - token
   - address
-
-version: '8.x-1.0-alpha1'
-core: '8.x'
-project: 'stripe_donation'
-datestamp: 1509833072

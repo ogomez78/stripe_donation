@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address
+    - node.type.donation
+  module:
+    - address
+id: node.donation.field_address
+field_name: field_address
+entity_type: node
+bundle: donation
+label: 'Donor Information'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries:
+    US: US
+  fields:
+    administrativeArea: administrativeArea
+    locality: locality
+    postalCode: postalCode
+    addressLine1: addressLine1
+    givenName: givenName
+    familyName: familyName
+    dependentLocality: '0'
+    sortingCode: '0'
+    addressLine2: '0'
+    organization: '0'
+    additionalName: '0'
+  langcode_override: ''
+field_type: address

@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_donation_amount
+field_name: field_donation_amount
+entity_type: node
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 30
+      label: $30
+    -
+      value: 60
+      label: $60
+    -
+      value: 120
+      label: $120
+    -
+      value: 300
+      label: $300
+    -
+      value: 0
+      label: Other
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

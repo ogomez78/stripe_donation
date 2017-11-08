@@ -1,0 +1,8 @@
+stripe_donation.stripe_charge_controller_charge:
+  path: 'node/add/donation'
+  methods: [POST]
+  defaults:
+    _controller: '\Drupal\stripe_donation\Controller\StripeChargeController::charge'
+    _title: 'charge'
+  requirements:
+    _permission: 'access content'

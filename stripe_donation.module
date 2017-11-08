@@ -1,8 +1,30 @@
 <?php
 
-/* Edit the title of the Donation content type's Node Add form */
 function stripe_donation_form_alter(&$form, &$form_state, $form_id) {
-  if ($form_id == 'donation_node_form') {
-    drupal_set_title('Donate Now. Change a Life');
+  if ($form_id == 'node_donation_form') {
+    /* Edit the title of the Donation content type's Node Add form */
+    $form['#title'] = 'Donate';
+
+    /* Edit the save button text */
+    if ( isset($form['actions']['submit']) ) {
+       $form['actions']['submit']['#value'] = t('Donate');
+    }
+
+    /* get stripe the public key */
+    $config = \Drupal::config('stripe_api.settings');
+    $mode = $config->get('mode');
+    $config_key = $mode . '_public_key';
+    $key_id = $config->get($config_key);
+    $stripepublickey = \Drupal::service('key.repository')->getKey($key_id)->getKeyValue();
+
+    /* Add javascript that tokenizes the credit card number to the form */
+    $form['#attached']['library'][] = 'stripe_donation/donation';
+    /* Pass the public key as a variable to the javascript file */
+    $form['#attached']['drupalSettings']['stripe_donation']['donation']['stripeid'] = $stripepublickey;
   }
+}
+
+/* add https://js.stripe.com/v3/ to every page on the site according to Stripe's recommendation to avoid security vulnerabilities: https://stripe.com/docs/stripe-js/reference#including-stripejs */
+function stripe_donation_page_attachments(array &$attachments) {
+  $attachments['#attached']['library'][] = 'stripe_donation/stripe';
 }

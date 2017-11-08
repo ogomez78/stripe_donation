@@ -1,0 +1,19 @@
+donation:
+  version: 1.x
+  css:
+    theme:
+      css/stripe_donation.css: {}
+  js:
+    js/stripe_donation.js: {}
+  dependencies:
+    - core/jquery
+
+stripe:
+  remote: https://js.stripe.com/v3/
+  version: 3.x
+  license:
+    name: Stripe
+    url: http://stripe.com
+    gpl-compatible: true
+  js:
+    https://js.stripe.com/v3/: {type: external, minified: true}
