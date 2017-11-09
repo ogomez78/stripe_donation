@@ -70,8 +70,8 @@ This is a very raw first draft approach to what I'd like to do with a donation p
 - Use Drupal rules to send the donor an email receipt of their donation and notify the fundraising team of the donation. 
 - Use Drupal Views to provide the fundraising team with a dashboard of their fundraising results, allowing them to filter by date, state, city, amount range; and allow them to download their results as a csv file for further analysis.
 
-What was hard
-I chose to meet both the guidelines and the 'extra credits' provided in the scope of this assignment, even if that meant having a couple of extra steps in the installation process. I took this approach because those items listed in the extra steps would probably feel more like must-haves rather than optional to a nonprofit organization based on my experience creating similar solutions.
+WHAT WAS HARD
+- I chose to meet both the guidelines and the 'extra credits' provided in the scope of this assignment, even if that meant having a couple of extra steps in the installation process. I took this approach because those items listed in the extra steps would probably feel more like must-haves rather than optional to a nonprofit organization based on my experience creating similar solutions.
 
-What was easy
-Crafting a solution that enables the client to increase their conversion rates is what I love doing, so building this was fun!
+WHAT WAS EASY
+- Crafting a solution that enables the client to increase their conversion rates is what I love doing, so building this was fun!
