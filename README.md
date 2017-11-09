@@ -5,7 +5,7 @@ Provides a turnkey online donation solution based on Stripe.
 Features:
 
 1. Allow the donor to select from a list of donation amounts or enter a custom value.
-2. Track the successful transactions from Stripe in Drupal with a record of the donation.
+2. Track the successful transactions from Stripe in Drupal with a record of the donation. Donations are created as nodes in the 'Donation' content type.
 3. Securely collect sensitive card details using Stripe Elements, their pre-built UI components. This significantly simplifies PCI compliance, while allowing you to place the card info inline inside the form. Learn more: https://stripe.com/docs/stripe-js
 4. Administrators easily customize:
   - Donation amounts options
@@ -32,17 +32,18 @@ Module Dependencies:
 
 Installation
 1. Clone the module's repo: git@github.com:ogomez78/stripe_donation.git and place it in the 'modules/custom' directory
-2. Run "composer install" in the module folder
+2. Run "composer install" inside the module folder
 3. Enable the module
-4. The module will create one new content type called 'Donation' along with these custom fields:
+4. Go to admin/config/services/stripe_api and set up your Stripe API keys and other preferences. Notice that this module comes with a set of keys already installed so that you can easily test the functionality. You can remove those and add your own as needed.
+
+Notes
+The module will create one new content type called 'Donation' along with these custom fields:
   - field_donation_amount
   - field_address
   - field_email
   - field_other_amount
   - field_stripe_token
   - field_total_amount
-
-5. Go to admin/config/services/stripe_api and set up your Stripe API keys and other preferences. Notice that this module comes with a set of keys already installed so that you can easily test the functionality. You can remove those and add your own as needed.
 
 Currency support
 This module currently only supports transactions in USD.
