@@ -48,6 +48,7 @@ Make a Donation
 5. The donation record will also show up as an unpublished node of type 'donation' in your Drupal instance.
 
 Content Type and Fields
+
 The module will create one new content type called 'Donation' along with these custom fields:
   - field_donation_amount
   - field_address
@@ -60,4 +61,5 @@ Security Considerations
 - This module allows you to test your donation form and Stripe integration over HTTP. However, live sites must use HTTPS to comply with Stripe's requirements for this type of integration.
 
 Currency support
+
 This module currently only supports transactions in USD.
