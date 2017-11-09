@@ -60,7 +60,7 @@ SECURITY CONSIDERATIONS
 - This module allows you to test your donation form and Stripe integration over HTTP. However, live sites must use HTTPS to comply with Stripe's requirements for this type of integration.
 
 CURRENCY SUPPORT
--This module currently only supports transactions in USD.
+- This module currently only supports transactions in USD.
 
 NEXT STEPS / IDEAS
 
