@@ -44,7 +44,7 @@ MAKE A DONATION
 1. Go to 'node/add/donation' to make a donation.
 2. Use Stripe's test credit card, 4242 4242 4242 4242, use any exp date in the future, any CVC and zip code.
 3. Fill out the rest of the fields and submit your donation.
-4. If successful, this donation will show up in the Stripe account you created, in test data: https://dashboard.stripe.com/test/payments, 
+4. If successful, this donation will show up in the Stripe account you created, in test data: https://dashboard.stripe.com/test/payments.
 5. The donation record will also show up as an unpublished node of type 'donation' in your Drupal instance.
 
 CONTENT TYPE AND FIELDS
