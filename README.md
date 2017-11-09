@@ -21,7 +21,7 @@ FEATURES
 
 MODULE DEPENDENCIES
 - Stripe API - stripe_api - https://www.drupal.org/project/stripe_api
-- Automatic Entity Label - auto_entitylabel - https://www.drupal.org/project/auto_entitylabel - Allows us to configure the node titles of the nodes created for each donation in this format: "$60 donation by Test Donor on Nov 8 2017, 11:43am"
+- Automatic Entity Label - auto_entitylabel - https://www.drupal.org/project/auto_entitylabel - Allows us to configure the node titles of the nodes created for each donation in this format: "$60 donation by John Doe on Nov 8 2017, 11:43am"
 - Token - token - https://www.drupal.org/project/token - Allows us to use tokens to configure automatic node titles for donation nodes.
 - Address - address - https://www.drupal.org/project/address - Allows us to configure donor information fields in the Donation content type.
 
